@@ -1,0 +1,30 @@
+.checkbox_basic {
+    display: inline-block;
+    /* background-color: #d7d7d7; */
+    border-radius: 6px;
+}
+
+.checkbox_basic_label {
+    background-color: transparent;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.checkbox_basic_input {
+    margin-right: 10px;
+    accent-color: #0a58ca;
+    height: 16px;
+    width: 16px;
+}
+.checkbox_tick {
+
+}
+
+.checkbox_basic_span {
+    color: #49a7f0;
+}
+
+.checkbox_basic_input:checked ~ .checkbox_basic_span {
+    color: #0dcaf0;
+    font-weight: 700;
+}

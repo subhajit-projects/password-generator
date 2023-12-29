@@ -1,0 +1,36 @@
+.checkbox_div {
+    
+}
+
+.checkbox_div_label {
+
+}
+
+.checkbox_basic_input {
+    display: none;
+}
+
+.checkbox_basic_input:checked ~ .checkbox_div_span {
+    box-shadow: 0px 0px 10px 2px #17c776;
+    color: #0a58ca;
+}
+
+.dark_theme .checkbox_basic_input:checked ~ .checkbox_div_span {
+    color: #00c6ee;    
+    box-shadow: 0px 0px 20px 4px #17c776;
+}
+
+.checkbox_div_span {
+    background-color: #cde3e7;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 11px 3px #0dcaf0;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+
+.dark_theme .checkbox_div_span {
+    color: black;
+}

@@ -1,0 +1,107 @@
+.field {
+    border: 2px solid #0dcaf0;
+    position: relative;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 7px;
+    width: 50%;
+}
+
+.floating_label {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    background-color: white;
+    margin-left: 10px;
+    padding: 0px 4px;
+    color: #0a58ca;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    pointer-events:none;
+    transition: .5s ease-out;
+}
+
+.dark_theme .floating_label {
+    background-color: black;
+    color: white;
+}
+
+.floating_text_field {
+    border: none;
+    outline: none;
+    padding: 4px;
+    width: 70%;
+    margin-top: 5px;
+    color: #0a58ca;
+    font-family: 'Roboto Slab', serif;
+    float: left;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+.dark_theme .floating_text_field {
+    color: #ffffff;
+}
+
+.floating_text_field:focus ~ .floating_label,
+.floating_text_field:not(:placeholder-shown) ~ .floating_label,
+.floating_text_field:not([value=""]) ~ .floating_label {
+    transform:translateY(-20px);
+}
+
+.field > i {
+    width: 5%;
+    cursor: pointer;
+    color: #0a58ca;
+    font-size: 20px;
+    text-align: right;
+    float: right;
+    padding-top: 9px;
+}
+
+.dark_theme i {
+    color: white;
+}
+
+.password_strength {
+    width: 20%;
+    max-width: 30%;
+    padding: 8px 10px;
+    float: left;
+    font-size: 14px;
+    color: black;
+}
+
+.very_weak {
+    background-color: red;
+    color: white;
+}
+.weak {
+    background-color: yellow;
+}
+.good {
+    background-color: lightgreen;
+}
+.strong {
+    background-color: green;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .floating_text_field{
+        width: 100%;
+    }
+    .password_strength {
+        width: 50%;
+        max-width: 50%;
+    }
+    .field > i {
+        width: 50%;
+    }
+    .field {
+        width: 100%;
+    }
+}
+
+/* https://codepen.io/devesh8/pen/MWYEJEP */

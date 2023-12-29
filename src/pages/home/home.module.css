@@ -1,0 +1,68 @@
+.root_layout {
+    width: 100%;
+    min-height: 100vh;
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    overflow: hidden;
+    padding: 20px 0px;
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.section {
+    width: 100%;
+    min-height: 70vh;
+    border: 1px solid red;
+    padding: 5px 15px;
+    position: relative;
+    background-color: white;
+    transition: .5s ease-out;
+}
+
+.dark_theme .section {
+    background-color: black;
+    color: white;
+}
+
+.section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    /* background: linear-gradient(to right, red, orange); */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite
+}
+
+@keyframes example {
+    0%   {background: linear-gradient(to right, red, orange);}
+    25%  {background: linear-gradient(to top, red, orange);}
+    50%  {background: linear-gradient(to left, red, orange);}
+    100% {background: linear-gradient(to bottom, red, orange);}
+}
+  
+
+.generate_button {
+    transition: .5s ease-out;
+    background: linear-gradient(to left, rgb(236, 236, 236) 50%, lightblue 50%) right;
+    background-size: 200%;
+}
+.generate_button:hover {
+    background-position: left;
+}
