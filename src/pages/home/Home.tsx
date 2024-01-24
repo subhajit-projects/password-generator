@@ -128,7 +128,7 @@ let Home = () => {
                 </div>
             </section> */}
             <footer>
-                {/* Footer */}aa
+                {/* Footer */}
             </footer>
         </div>
     )
