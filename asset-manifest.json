@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/password-generator/static/css/main.f1354110.css",
+    "main.js": "/password-generator/static/js/main.0c333b16.js",
+    "static/js/787.0b364719.chunk.js": "/password-generator/static/js/787.0b364719.chunk.js",
+    "static/media/StarRenegades-JR9Va.ttf": "/password-generator/static/media/StarRenegades-JR9Va.b18e3ec7c79ac26c0dbe.ttf",
+    "index.html": "/password-generator/index.html",
+    "main.f1354110.css.map": "/password-generator/static/css/main.f1354110.css.map",
+    "main.0c333b16.js.map": "/password-generator/static/js/main.0c333b16.js.map",
+    "787.0b364719.chunk.js.map": "/password-generator/static/js/787.0b364719.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1354110.css",
+    "static/js/main.0c333b16.js"
+  ]
+}
